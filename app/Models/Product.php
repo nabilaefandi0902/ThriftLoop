@@ -8,6 +8,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Product extends Model
 {
+    protected $fillable = [
+        'seller_id',
+        'title',
+        'description',
+        'base_price',
+        'min_price',
+        'condition_percentage',
+        'size_detail',
+    ];
+
     /**
      * Relasi: Produk dimiliki oleh satu penjual.
      */

@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class VerificationLog extends Model
 {
+    protected $fillable = [
+        'product_id',
+        'admin_id',
+        'curation_result',
+        'notes',
+    ];
+
     /**
      * Relasi: Catatan verifikasi terkait dengan satu produk.
      */
